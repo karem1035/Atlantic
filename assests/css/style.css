@@ -1,6 +1,13 @@
 /* styles.css */
 
 /* GENERAL STYLINGS */
+.no-visual-search {
+	pointer-events: none;
+}
+
+img {
+	pointer-events: none
+}
 
 :root {
 	--dark: #4a4a4a;
@@ -75,14 +82,20 @@ nav button {
 
 nav ul {
 	display: flex;
-	gap: 3rem;
+	gap: 1rem;
 	direction: rtl;
+}
+
+.hotline {
+	width: 9rem;
+	padding: 0;
 }
 
 /* HERO */
 .hero {
 	margin-bottom: 10rem;
 }
+
 .hero img {
 	width: 100%;
 }
@@ -113,19 +126,18 @@ nav ul {
 
 /* FORM */
 
-.btn {
+form .btn {
 
 	border: 2px solid #ffffff !important;
 	background-color: transparent !important;
 	transition: 0.5s !important;
 }
 
-.btn:hover {
+form .btn:hover {
 
 	border: 2px solid #ffffff !important;
 	background-color: #fff !important;
 	color: var(--dark);
-	font-family: ;
 }
 
 .form {
@@ -150,5 +162,43 @@ nav ul {
 /* FOOTER */
 
 footer {
+	color: #fff;
+	font-size: 1rem;
 	background-color: var(--dark);
+}
+
+footer .container {
+	padding: 1rem 0rem;
+}
+
+footer .countries {
+	columns: 2;
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+	columns: 2;
+
+}
+
+footer ul a {
+	color: #fff;
+	width: 10px;
+}
+
+
+
+footer .logo {
+	width: 15rem;
+}
+
+footer .social {
+	display: flex;
+	gap: 2rem;
+}
+
+footer .social a {
+	font-size: 1.5rem;
+}
 }

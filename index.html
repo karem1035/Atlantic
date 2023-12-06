@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assests/images/favicon.ico" />
+    <link rel="stylesheet" href="assests/css/all.min.css" />
     <link rel="stylesheet" href="assests/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assests/css/style.css" />
     <link rel="stylesheet" href="assests/css/media.css" />
@@ -42,10 +43,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">تواصل معنا</a>
+              <a class="nav-link" href="#">تحميل الكاتالوج</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">تحميل الكاتالوج</a>
+              <a class="nav-link" href="#">تواصل معنا</a>
             </li>
           </ul>
         </div>
@@ -59,16 +60,16 @@
       <div class="hero-content" dir="rtl">
         <h1>عن أتلانتيك</h1>
         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
-          النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
-          الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص
-          العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
-          الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+          شركة فرنسية عالمية ذات خبرة تمتد لأكثر من 50 عام، ومتخصصة في تقديم
+          حلول الطاقة، والحرارة، والتهوية، عن طريق تصنيع منتجات تعمل على زيادة
+          راحة عملاءها، مثل سخانات المياه بشكلٍ أساسي، والتي نجحت أتلانتيك في أن
+          تحسنها وتنتجها وفقًا لأحدث معايير البيئة الأوروبية، وآخر التقنيات
+          التكنولوجية ما جعلها تستحق لقب "متخصصون في تكنولوجيا السخان" عن كسب.
         </p>
       </div>
     </section>
     <!-- SLIDER -->
-    <section class="container slider">
+    <div class="container-lg slider">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -106,7 +107,7 @@
           </div>
           <div class="carousel-item" data-bs-interval="5000">
             <img
-              src="assests/images/slider2.jpg"
+              src="assests/images/slider2.png"
               class="d-block w-100"
               alt="..."
             />
@@ -139,22 +140,20 @@
         </button>
       </div>
       <div class="container"></div>
-    </section>
+    </div>
 
     <!-- PRODUCTS -->
-    <div class="container"></div>
-    <div style="height: 100vh; background-color: blue"></div>
-    <div style="height: 100vh; background-color: red"></div>
+
     <!-- Form -->
     <div class="form mt-5 mx-auto" dir="rtl">
-      <form class="container col-6 my-5">
+      <form class="container my-5 col-6">
         <label for="">
           <p class="h2 fs-2 mb-4">تواصل معنا</p>
         </label>
         <div class="d-grid">
           <div class="row">
             <div class="form-group col-md-6 mb-3">
-              <label for="lastName">الأسم الثاني</label>
+              <label for="lastName">الأسم الأول</label>
               <input
                 type="text"
                 class="form-control form-control-lg"
@@ -187,7 +186,7 @@
         </div>
 
         <div class="form-group">
-          <button type="submit" class="btn col-2 btn-primary fs-4">
+          <button type="submit" class="btn col-3 btn-primary fs-4">
             أرسل لنا
           </button>
         </div>
@@ -196,7 +195,61 @@
 
     <footer class="py-5">
       <div class="container d-grid">
-        <img src="assests/images/white logo.svg " class="col-2 row" alt="" />
+        <div class="row justify-content-between mb-4">
+          <img
+            src="assests/images/white logo.svg "
+            class="col-6 logo align-self-start"
+            alt=""
+          />
+          <img src="assests/images/hotline.png" class="col-2" alt="" />
+        </div>
+        <div class="row justify-content-between mx-5" dir="rtl">
+          <div class="col-2" dir="rtl">
+            <p class="fs-5 fw-bold">الموقع حسب البلد</p>
+            <ul class="countries">
+              <li class="pb-2"><a href="#">عالمي</a></li>
+              <li class="pb-2"><a href="#">بلجيكا</a></li>
+              <li class="pb-2"><a href="#">إيطاليا</a></li>
+              <li class="pb-2"><a href="#">فرنسا</a></li>
+              <li class="pb-2"><a href="#">بولندا</a></li>
+              <li class="pb-2"><a href="#">أوكرانيا</a></li>
+            </ul>
+          </div>
+          <div class="col-2" dir="rtl">
+            <p class="fs-5 fw-bold">المنتجات</p>
+            <ul>
+              <li class="pb-2"><a href="#">فيرتيجو</a></li>
+              <li class="pb-2"><a href="#">اوبرو تيربو </a></li>
+              <li class="pb-2"><a href="#">اوبرو</a></li>
+              <li class="pb-2"><a href="#">ايجو</a></li>
+              <li class="pb-2"><a href="#">كونسبت</a></li>
+            </ul>
+          </div>
+          <div class="col-2" dir="rtl">
+            <p class="fs-5 fw-bold">تواصل معنا</p>
+            <ul class="social">
+              <li class="pb-2">
+                <a
+                  href="https://www.facebook.com/waterheateratlantic"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="pb-2">
+                <a href="https://www.youtube.com/@atlanticegypt" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li class="pb-2">
+                <a
+                  href="https://www.instagram.com/atlantic.egypt/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
