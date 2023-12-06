@@ -1,0 +1,12 @@
+@media screen and (max-width: 973px) {
+	.top-bar {
+		display: none !important;
+	}
+
+
+	nav ul {
+		direction: rtl;
+		margin: 20px 0px !important;
+		padding: 0 !important;
+	}
+}
