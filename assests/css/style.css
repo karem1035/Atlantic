@@ -91,10 +91,6 @@ nav ul {
 	margin-bottom: 10rem;
 }
 
-.hero img {
-	width: 100%;
-}
-
 
 .hero-content {
 	width: 35rem;
@@ -107,9 +103,15 @@ nav ul {
 	flex-direction: column;
 	gap: 1rem;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-110%, 0);
+	bottom: -10%;
+	left: 0;
+}
+
+@media (max-width: 768px) {
+	.hero-content {
+		position: relative;
+		margin: auto;
+	}
 }
 
 /* SLIDER */
