@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assests/css/media.css" />
     <title>Atlantic</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- TOP BAR -->
     <div class="top-bar d-flex justify-content-center align-c m-1">
       <img src="assests/images/france-icon.png" class="me-4" alt="" />
@@ -21,12 +21,12 @@
     <!-- NAV BAR -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-body sticky-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#hero">
           <img
             id="logo"
             src="assests/images/red logo.svg"
             alt="atlantic logo"
-            width="100%"
+            width="80%"
           />
         </a>
         <button
@@ -42,18 +42,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">تحميل الكاتالوج</a>
+            <li class="nav-item first-nav-item">
+              <a class="nav-link active" href="#">تحميل الكاتالوج</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">تواصل معنا</a>
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">منتجاتنا</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- HERO IMAGE -->
-    <section class="container hero">
+    <section class="container hero" id="hero">
       <div class="hero-img">
         <img src="assests/images/hero.jpg" alt="..." />
       </div>
@@ -145,7 +148,7 @@
     <!-- PRODUCTS -->
 
     <!-- Form -->
-    <div class="form mt-5 mx-auto" dir="rtl">
+    <div class="form mt-5 mx-auto" dir="rtl" id="contact">
       <form class="container my-5 col-6">
         <label for="">
           <p class="h2 fs-2 mb-4">تواصل معنا</p>
