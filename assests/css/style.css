@@ -128,16 +128,11 @@ header {
 
 
 .image-scale img {
-	transition: 1s;
+	transition: 0.4s;
 }
 
 .image-scale:hover img {
-	scale: 1.2;
-}
-
-
-.product-bg {
-	background: #e2e2e2 !important;
+	scale: 1.1;
 }
 
 /* FORM */
