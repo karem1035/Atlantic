@@ -1,262 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assests/images/favicon.ico" />
-    <link rel="stylesheet" href="assests/css/all.min.css" />
-    <link rel="stylesheet" href="assests/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assests/css/style.css" />
-    <link rel="stylesheet" href="assests/css/media.css" />
-    <title>Atlantic</title>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <!-- TOP BAR -->
-    <div class="top-bar d-flex justify-content-center align-c m-1">
-      <img src="assests/images/france-icon.png" class="me-4" alt="" />
-      <a href="#" class="fs-4 text">
-        <span class="me-2">1986</span>علامة فرنسية منذ عام</a
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assests/images/favicon.ico" />
+  <link rel="stylesheet" href="assests/css/all.min.css" />
+  <link rel="stylesheet" href="assests/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assests/css/style.css" />
+  <link rel="stylesheet" href="assests/css/media.css" />
+  <title>Atlantic</title>
+</head>
+
+
+
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <!-- TOP BAR -->
+  <div class="top-bar d-flex justify-content-center align-c m-1">
+    <img src="assests/images/france-icon.png" class="me-4" alt="" />
+    <a href="#" class="fs-4 text">
+      <span class="me-2">1986</span>علامة فرنسية منذ عام</a>
+  </div>
+  <!-- NAV BAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img id="logo" src="assests/images/red logo.svg" alt="atlantic logo" width="80%" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item first-nav-item">
+            <a class="nav-link active" href="#">تحميل الكاتالوج</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">منتجاتنا</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- NAV BAR -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body sticky-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#hero">
-          <img
-            id="logo"
-            src="assests/images/red logo.svg"
-            alt="atlantic logo"
-            width="80%"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  </nav>
+  <!-- HERO IMAGE -->
+  <section class="container hero" id="hero">
+    <div class="hero-img">
+      <img src="assests/images/hero.jpg" alt="..." />
+    </div>
+    <div class="hero-content" dir="rtl">
+      <h1>عن أتلانتيك</h1>
+      <p>
+        شركة فرنسية عالمية ذات خبرة تمتد لأكثر من 50 عام، ومتخصصة في تقديم
+        حلول الطاقة، والحرارة، والتهوية، عن طريق تصنيع منتجات تعمل على زيادة
+        راحة عملاءها، مثل سخانات المياه بشكلٍ أساسي، والتي نجحت أتلانتيك في أن
+        تحسنها وتنتجها وفقًا لأحدث معايير البيئة الأوروبية، وآخر التقنيات
+        التكنولوجية ما جعلها تستحق لقب "متخصصون في تكنولوجيا السخان" عن كسب.
+      </p>
+    </div>
+  </section>
+  <!-- SLIDER -->
+  <div class="container-lg slider">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="assests/images/slider-1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assests/images/slider2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assests/images/slider 3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container"></div>
+  </div>
+
+  <!-- PRODUCTS -->
+
+  <section id="products" class="fs-5">
+
+    <h2 class="text-center display-3 fw-bolder py-5 mb-5">منتجات أتلانتيك</h2>
+
+    <div class="product bg-light py-5" dir="rtl">
+      <div class="container py-5">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+
+            <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+            <ul class="py-3 px-3">
+              <li class="text-secondary list-group-item-secondary mb-3" style="list-style: none;">الموديل</li>
+              <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
+              <li class="py-2">تصميم اتلانتيك الفريد</li>
+              <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
+              <li class="py-2">عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة</li>
+            </ul>
+            <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+
+            <!-- #region button and modal -->
+
+            <!-- Button trigger modal -->
+            <button dir="rtl" type="button" class="btn btn-dark rounded-0 px-5 py-2 mt-3" data-bs-toggle="modal"
+              data-bs-target="#firstproductmodal">
+              المزيد
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="firstproductmodal" tabindex="-1" aria-labelledby="firstproductmodalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-transparent">
+
+
+
+                  <div class="modal-body bg-white">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal-title text-center fw-bolder mb-3">سخان فورتيجو</h3>
+                    <div class="row g-5">
+
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-center gap-2">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <ul dir="rtl" class="text-dark">
+                          <li>تصميم فريد وعصري من أتلانتيك.</li>
+                          <li>جيل جديد من جودة الماس في الإيناميلد.</li>
+                          <li>أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.</li>
+                          <li>عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية وتوفير الكهرباء.</li>
+                          <li>متوفر بسعة 50 لتر.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary" data-bs-dismiss="modal">إغلق</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- #endregion -->
+
+          </div>
+
+          <div class="col-md-6 order-sm-first order-md-last">
+            <div>
+              <img class="w-100" src="assests/images/productImage.png" alt="product name">
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="product bg-secondary-subtle py-5" dir="ltr">
+      <div class="container py-5">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+
+            <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+            <ul class="py-3 px-3">
+              <li class="text-secondary list-group-item-secondary mb-3" style="list-style: none;">الموديل</li>
+              <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
+              <li class="py-2">تصميم اتلانتيك الفريد</li>
+              <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
+              <li class="py-2">عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة</li>
+            </ul>
+            <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+
+            <!-- #region button and modal -->
+
+            <!-- Button trigger modal -->
+            <button dir="rtl" type="button" class="btn btn-dark rounded-0 px-5 py-2 mt-3" data-bs-toggle="modal"
+              data-bs-target="#secondproductmodal">
+              المزيد
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="secondproductmodal" tabindex="-1" aria-labelledby="secondproductmodalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-transparent">
+
+
+
+                  <div class="modal-body bg-white">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal-title text-center fw-bolder mb-3">سخان فورتيجو</h3>
+                    <div class="row g-5">
+
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-center gap-2">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <ul dir="rtl" class="text-dark">
+                          <li>تصميم فريد وعصري من أتلانتيك.</li>
+                          <li>جيل جديد من جودة الماس في الإيناميلد.</li>
+                          <li>أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.</li>
+                          <li>عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية وتوفير الكهرباء.</li>
+                          <li>متوفر بسعة 50 لتر.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary" data-bs-dismiss="modal">إغلق</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- #endregion -->
+
+          </div>
+
+          <div class="col-md-6 order-sm-first order-md-last">
+            <div>
+              <img class="w-100" src="assests/images/productImage.png" alt="product name">
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="product bg-light py-5" dir="rtl">
+      <div class="container py-5">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+
+            <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+            <ul class="py-3 px-3">
+              <li class="text-secondary list-group-item-secondary mb-3" style="list-style: none;">الموديل</li>
+              <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
+              <li class="py-2">تصميم اتلانتيك الفريد</li>
+              <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
+              <li class="py-2">عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة</li>
+            </ul>
+            <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+
+            <!-- #region button and modal -->
+
+            <!-- Button trigger modal -->
+            <button dir="rtl" type="button" class="btn btn-dark rounded-0 px-5 py-2 mt-3" data-bs-toggle="modal"
+              data-bs-target="#thirdproductmodal">
+              المزيد
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="thirdproductmodal" tabindex="-1" aria-labelledby="thirdproductmodalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-transparent">
+
+
+
+                  <div class="modal-body bg-white">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal-title text-center fw-bolder mb-3">سخان فورتيجو</h3>
+                    <div class="row g-5">
+
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-center gap-2">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <ul dir="rtl" class="text-dark">
+                          <li>تصميم فريد وعصري من أتلانتيك.</li>
+                          <li>جيل جديد من جودة الماس في الإيناميلد.</li>
+                          <li>أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.</li>
+                          <li>عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية وتوفير الكهرباء.</li>
+                          <li>متوفر بسعة 50 لتر.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary" data-bs-dismiss="modal">إغلق</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- #endregion -->
+
+          </div>
+
+          <div class="col-md-6 order-sm-first order-md-last">
+            <div>
+              <img class="w-100" src="assests/images/productImage.png" alt="product name">
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="product bg-secondary-subtle py-5" dir="ltr">
+      <div class="container py-5">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+
+            <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+            <ul class="py-3 px-3">
+              <li class="text-secondary list-group-item-secondary mb-3" style="list-style: none;">الموديل</li>
+              <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
+              <li class="py-2">تصميم اتلانتيك الفريد</li>
+              <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
+              <li class="py-2">عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة</li>
+            </ul>
+            <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+
+            <!-- #region button and modal -->
+
+            <!-- Button trigger modal -->
+            <button dir="rtl" type="button" class="btn btn-dark rounded-0 px-5 py-2 mt-3" data-bs-toggle="modal"
+              data-bs-target="#fourthproductmodal">
+              المزيد
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="fourthproductmodal" tabindex="-1" aria-labelledby="fourthproductmodalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-transparent">
+
+
+
+                  <div class="modal-body bg-white">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal-title text-center fw-bolder mb-3">سخان فورتيجو</h3>
+                    <div class="row g-5">
+
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-center gap-2">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <ul dir="rtl" class="text-dark">
+                          <li>تصميم فريد وعصري من أتلانتيك.</li>
+                          <li>جيل جديد من جودة الماس في الإيناميلد.</li>
+                          <li>أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.</li>
+                          <li>عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية وتوفير الكهرباء.</li>
+                          <li>متوفر بسعة 50 لتر.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary" data-bs-dismiss="modal">إغلق</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- #endregion -->
+
+          </div>
+
+          <div class="col-md-6 order-sm-first order-md-last">
+            <div>
+              <img class="w-100" src="assests/images/productImage.png" alt="product name">
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="product bg-light py-5" dir="rtl">
+      <div class="container py-5">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+
+            <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+            <ul class="py-3 px-3">
+              <li class="text-secondary list-group-item-secondary mb-3" style="list-style: none;">الموديل</li>
+              <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
+              <li class="py-2">تصميم اتلانتيك الفريد</li>
+              <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
+              <li class="py-2">عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة</li>
+            </ul>
+            <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+
+            <!-- #region button and modal -->
+
+            <!-- Button trigger modal -->
+            <button dir="rtl" type="button" class="btn btn-dark rounded-0 px-5 py-2 mt-3" data-bs-toggle="modal"
+              data-bs-target="#fifthproductmodal">
+              المزيد
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="fifthproductmodal" tabindex="-1" aria-labelledby="fifthproductmodalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-transparent">
+
+
+
+                  <div class="modal-body bg-white">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal-title text-center fw-bolder mb-3">سخان فورتيجو</h3>
+                    <div class="row g-5">
+
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-center gap-2">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                          <img class="w-25" src="assests/images/productImage.png" alt="product name">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <ul dir="rtl" class="text-dark">
+                          <li>تصميم فريد وعصري من أتلانتيك.</li>
+                          <li>جيل جديد من جودة الماس في الإيناميلد.</li>
+                          <li>أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.</li>
+                          <li>عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية وتوفير الكهرباء.</li>
+                          <li>متوفر بسعة 50 لتر.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary" data-bs-dismiss="modal">إغلق</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- #endregion -->
+
+          </div>
+
+          <div class="col-md-6 order-sm-first order-md-last">
+            <div>
+              <img class="w-100" src="assests/images/productImage.png" alt="product name">
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Form -->
+  <div class="form mt-5 mx-auto" dir="rtl" id="contact">
+    <form class="container my-5 col-md-6">
+      <label for="">
+        <p class="h2 fs-2 mb-4">تواصل معنا</p>
+      </label>
+      <div class="d-grid">
+        <div class="row">
+          <div class="form-group col-md-6 mb-3">
+            <label for="lastName">الأسم الأول</label>
+            <input type="text" class="form-control form-control-lg" id="lastName" />
+          </div>
+          <div class="form-group col-md-6 mb-3">
+            <label for="lastName">الأسم الثاني</label>
+            <input type="text" class="form-control form-control-lg" id="lastName" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group col-md-12 mb-3">
+        <label for="email">الإيميل الشخصي</label>
+        <input type="email" class="form-control form-control-lg" id="email" />
+      </div>
+
+      <div class="form-group mb-3 col-md-12">
+        <label for="message">الرسالة</label>
+        <textarea class="form-control form-control-lg mb-4" id="message" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn col-3 btn-primary fs-4">
+          أرسل لنا
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item first-nav-item">
-              <a class="nav-link active" href="#">تحميل الكاتالوج</a>
+      </div>
+    </form>
+  </div>
+
+  <footer class="py-5">
+    <div class="container d-grid">
+      <div class="row justify-content-between mb-4">
+        <img src="assests/images/white logo.svg " class="col-6 logo align-self-start" alt="" />
+        <img src="assests/images/hotline.png" class="col-2" alt="" />
+      </div>
+      <div class="row justify-content-between mx-5" dir="rtl">
+        <div class="col-2" dir="rtl">
+          <p class="fs-5 fw-bold">الموقع حسب البلد</p>
+          <ul class="countries">
+            <li class="pb-2"><a href="#">عالمي</a></li>
+            <li class="pb-2"><a href="#">بلجيكا</a></li>
+            <li class="pb-2"><a href="#">إيطاليا</a></li>
+            <li class="pb-2"><a href="#">فرنسا</a></li>
+            <li class="pb-2"><a href="#">بولندا</a></li>
+            <li class="pb-2"><a href="#">أوكرانيا</a></li>
+          </ul>
+        </div>
+        <div class="col-2" dir="rtl">
+          <p class="fs-5 fw-bold">المنتجات</p>
+          <ul>
+            <li class="pb-2"><a href="#">فيرتيجو</a></li>
+            <li class="pb-2"><a href="#">اوبرو تيربو </a></li>
+            <li class="pb-2"><a href="#">اوبرو</a></li>
+            <li class="pb-2"><a href="#">ايجو</a></li>
+            <li class="pb-2"><a href="#">كونسبت</a></li>
+          </ul>
+        </div>
+        <div class="col-2" dir="rtl">
+          <p class="fs-5 fw-bold">تواصل معنا</p>
+          <ul class="social">
+            <li class="pb-2">
+              <a href="https://www.facebook.com/waterheateratlantic" target="_blank"><i
+                  class="fa-brands fa-facebook-f"></i></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">تواصل معنا</a>
+            <li class="pb-2">
+              <a href="https://www.youtube.com/@atlanticegypt" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">منتجاتنا</a>
+            <li class="pb-2">
+              <a href="https://www.instagram.com/atlantic.egypt/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- HERO IMAGE -->
-    <section class="container hero" id="hero">
-      <div class="hero-img">
-        <img src="assests/images/hero.jpg" alt="..." />
-      </div>
-      <div class="hero-content" dir="rtl">
-        <h1>عن أتلانتيك</h1>
-        <p>
-          شركة فرنسية عالمية ذات خبرة تمتد لأكثر من 50 عام، ومتخصصة في تقديم
-          حلول الطاقة، والحرارة، والتهوية، عن طريق تصنيع منتجات تعمل على زيادة
-          راحة عملاءها، مثل سخانات المياه بشكلٍ أساسي، والتي نجحت أتلانتيك في أن
-          تحسنها وتنتجها وفقًا لأحدث معايير البيئة الأوروبية، وآخر التقنيات
-          التكنولوجية ما جعلها تستحق لقب "متخصصون في تكنولوجيا السخان" عن كسب.
-        </p>
-      </div>
-    </section>
-    <!-- SLIDER -->
-    <div class="container-lg slider">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img
-              src="assests/images/slider-1.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img
-              src="assests/images/slider2.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img
-              src="assests/images/slider 3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="container"></div>
     </div>
+  </footer>
 
-    <!-- PRODUCTS -->
+  <script src="assests/script/bootstrap.bundle.min.js"></script>
+  <script src="assests/script/script.js"></script>
+</body>
 
-    <!-- Form -->
-    <div class="form mt-5 mx-auto" dir="rtl" id="contact">
-      <form class="container my-5 col-6">
-        <label for="">
-          <p class="h2 fs-2 mb-4">تواصل معنا</p>
-        </label>
-        <div class="d-grid">
-          <div class="row">
-            <div class="form-group col-md-6 mb-3">
-              <label for="lastName">الأسم الأول</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                id="lastName"
-              />
-            </div>
-            <div class="form-group col-md-6 mb-3">
-              <label for="lastName">الأسم الثاني</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                id="lastName"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group mb-3">
-          <label for="email">الإيميل الشخصي</label>
-          <input type="email" class="form-control form-control-lg" id="email" />
-        </div>
-
-        <div class="form-group mb-3">
-          <label for="message">الرسالة</label>
-          <textarea
-            class="form-control form-control-lg mb-4"
-            id="message"
-            rows="3"
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <button type="submit" class="btn col-3 btn-primary fs-4">
-            أرسل لنا
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <footer class="py-5">
-      <div class="container d-grid">
-        <div class="row justify-content-between mb-4">
-          <img
-            src="assests/images/white logo.svg "
-            class="col-6 logo align-self-start"
-            alt=""
-          />
-          <img src="assests/images/hotline.png" class="col-2" alt="" />
-        </div>
-        <div class="row justify-content-between mx-5" dir="rtl">
-          <div class="col-2" dir="rtl">
-            <p class="fs-5 fw-bold">الموقع حسب البلد</p>
-            <ul class="countries">
-              <li class="pb-2"><a href="#">عالمي</a></li>
-              <li class="pb-2"><a href="#">بلجيكا</a></li>
-              <li class="pb-2"><a href="#">إيطاليا</a></li>
-              <li class="pb-2"><a href="#">فرنسا</a></li>
-              <li class="pb-2"><a href="#">بولندا</a></li>
-              <li class="pb-2"><a href="#">أوكرانيا</a></li>
-            </ul>
-          </div>
-          <div class="col-2" dir="rtl">
-            <p class="fs-5 fw-bold">المنتجات</p>
-            <ul>
-              <li class="pb-2"><a href="#">فيرتيجو</a></li>
-              <li class="pb-2"><a href="#">اوبرو تيربو </a></li>
-              <li class="pb-2"><a href="#">اوبرو</a></li>
-              <li class="pb-2"><a href="#">ايجو</a></li>
-              <li class="pb-2"><a href="#">كونسبت</a></li>
-            </ul>
-          </div>
-          <div class="col-2" dir="rtl">
-            <p class="fs-5 fw-bold">تواصل معنا</p>
-            <ul class="social">
-              <li class="pb-2">
-                <a
-                  href="https://www.facebook.com/waterheateratlantic"
-                  target="_blank"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="pb-2">
-                <a href="https://www.youtube.com/@atlanticegypt" target="_blank"
-                  ><i class="fa-brands fa-youtube"></i
-                ></a>
-              </li>
-              <li class="pb-2">
-                <a
-                  href="https://www.instagram.com/atlantic.egypt/"
-                  target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="assests/script/bootstrap.bundle.min.js"></script>
-    <script src="assests/script/script.js"></script>
-  </body>
 </html>
