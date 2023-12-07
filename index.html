@@ -25,7 +25,7 @@
       class="navbar navbar-expand-lg bg-body sticky-top shadow-sm"
     >
       <div class="container">
-        <a class="navbar-brand" href="#hero">
+        <a class="navbar-brand col-3" href="#hero">
           <img
             id="logo"
             src="assests/images/red logo.svg"
@@ -53,7 +53,7 @@
               <a class="nav-link" href="#contact">تواصل معنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">منتجاتنا</a>
+              <a class="nav-link" href="#products">منتجاتنا</a>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@
       </div>
     </header>
     <!-- SLIDER -->
-    <div class="container-lg slider">
+    <div class="container-lg slider mb-5">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -110,21 +110,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
             <img
-              src="assests/images/slider-1.png"
+              src="assests/images/slider-1.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="5000">
             <img
-              src="assests/images/slider2.png"
+              src="assests/images/slider-2.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="5000">
             <img
-              src="assests/images/slider 3.jpg"
+              src="assests/images/slider-3.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -154,13 +154,13 @@
 
     <!-- PRODUCTS -->
 
-    <section id="products" class="fs-5">
-      <h2 class="text-center display-3 fw-bolder py-5 mb-5">منتجات أتلانتيك</h2>
-
-      <div class="product bg-light py-5" dir="rtl">
+    <section class="fs-5">
+      <h2 class="text-center display-3 fw-bolder mt-5 pt-5">منتجات أتلانتيك</h2>
+      <!-- PRODUCT 1 -->
+      <div class="product bg-light py-5" dir="rtl" id="products">
         <div class="container py-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+          <div class="row g-5 align-items-center justify-content-center">
+            <div class="col-md-5 order-sm-last order-md-first">
               <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
               <ul class="py-3 px-3">
                 <li
@@ -208,11 +208,11 @@
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       ></button>
-                      <h3 class="modal-title text-center fw-bolder mb-3">
+                      <h3 class="modal-title text-center fw-bolder mb-5">
                         سخان فورتيجو
                       </h3>
-                      <div class="row g-5">
-                        <div class="col-md-12">
+                      <div class="row g-5 justify-content-center">
+                        <div class="col-md-9">
                           <div class="d-flex justify-content-center gap-2">
                             <img
                               class="w-50"
@@ -227,7 +227,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                           <ul dir="rtl" class="text-dark">
                             <li>تصميم فريد وعصري من أتلانتيك.</li>
                             <li>جيل جديد من جودة الماس في الإيناميلد.</li>
@@ -256,9 +256,8 @@
 
               <!-- #endregion -->
             </div>
-
-            <div class="col-md-6 order-sm-first order-md-last">
-              <div>
+            <div class="col-md-5">
+              <div class="image-scale">
                 <img
                   class="w-100"
                   src="assests/images/productImage.png"
@@ -269,11 +268,11 @@
           </div>
         </div>
       </div>
-
-      <div class="product bg-secondary-subtle py-5" dir="ltr">
+      <!-- PRODUCT 2 -->
+      <div class="product bg-light py-5" dir="rtl" id="products">
         <div class="container py-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
+          <div class="row g-5 align-items-center justify-content-center">
+            <div class="col-md-5 order-sm-last order-md-first">
               <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
               <ul class="py-3 px-3">
                 <li
@@ -299,7 +298,7 @@
                 type="button"
                 class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
-                data-bs-target="#secondproductmodal"
+                data-bs-target="#firstproductmodal"
               >
                 المزيد
               </button>
@@ -307,9 +306,9 @@
               <!-- Modal -->
               <div
                 class="modal fade"
-                id="secondproductmodal"
+                id="firstproductmodal"
                 tabindex="-1"
-                aria-labelledby="secondproductmodalLabel"
+                aria-labelledby="firstproductmodalLabel"
                 aria-hidden="true"
               >
                 <div class="modal-dialog modal-xl">
@@ -321,11 +320,11 @@
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       ></button>
-                      <h3 class="modal-title text-center fw-bolder mb-3">
+                      <h3 class="modal-title text-center fw-bolder mb-5">
                         سخان فورتيجو
                       </h3>
-                      <div class="row g-5">
-                        <div class="col-md-12">
+                      <div class="row g-5 justify-content-center">
+                        <div class="col-md-9">
                           <div class="d-flex justify-content-center gap-2">
                             <img
                               class="w-50"
@@ -340,7 +339,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                           <ul dir="rtl" class="text-dark">
                             <li>تصميم فريد وعصري من أتلانتيك.</li>
                             <li>جيل جديد من جودة الماس في الإيناميلد.</li>
@@ -369,348 +368,8 @@
 
               <!-- #endregion -->
             </div>
-
-            <div class="col-md-6 order-sm-first order-md-last">
-              <div>
-                <img
-                  class="w-100"
-                  src="assests/images/productImage.png"
-                  alt="product name"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product bg-light py-5" dir="rtl">
-        <div class="container py-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
-              <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
-              <ul class="py-3 px-3">
-                <li
-                  class="text-secondary list-group-item-secondary mb-3"
-                  style="list-style: none"
-                >
-                  الموديل
-                </li>
-                <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
-                <li class="py-2">تصميم اتلانتيك الفريد</li>
-                <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
-                <li class="py-2">
-                  عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة
-                </li>
-              </ul>
-              <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
-
-              <!-- #region button and modal -->
-
-              <!-- Button trigger modal -->
-              <button
-                dir="rtl"
-                type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#thirdproductmodal"
-              >
-                المزيد
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="thirdproductmodal"
-                tabindex="-1"
-                aria-labelledby="thirdproductmodalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content bg-transparent">
-                    <div class="modal-body bg-white">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                      <h3 class="modal-title text-center fw-bolder mb-3">
-                        سخان فورتيجو
-                      </h3>
-                      <div class="row g-5">
-                        <div class="col-md-12">
-                          <div class="d-flex justify-content-center gap-2">
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <ul dir="rtl" class="text-dark">
-                            <li>تصميم فريد وعصري من أتلانتيك.</li>
-                            <li>جيل جديد من جودة الماس في الإيناميلد.</li>
-                            <li>
-                              أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.
-                            </li>
-                            <li>
-                              عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية
-                              وتوفير الكهرباء.
-                            </li>
-                            <li>متوفر بسعة 50 لتر.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        إغلق
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- #endregion -->
-            </div>
-
-            <div class="col-md-6 order-sm-first order-md-last">
-              <div>
-                <img
-                  class="w-100"
-                  src="assests/images/productImage.png"
-                  alt="product name"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product bg-secondary-subtle py-5" dir="ltr">
-        <div class="container py-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
-              <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
-              <ul class="py-3 px-3">
-                <li
-                  class="text-secondary list-group-item-secondary mb-3"
-                  style="list-style: none"
-                >
-                  الموديل
-                </li>
-                <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
-                <li class="py-2">تصميم اتلانتيك الفريد</li>
-                <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
-                <li class="py-2">
-                  عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة
-                </li>
-              </ul>
-              <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
-
-              <!-- #region button and modal -->
-
-              <!-- Button trigger modal -->
-              <button
-                dir="rtl"
-                type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#fourthproductmodal"
-              >
-                المزيد
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="fourthproductmodal"
-                tabindex="-1"
-                aria-labelledby="fourthproductmodalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content bg-transparent">
-                    <div class="modal-body bg-white">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                      <h3 class="modal-title text-center fw-bolder mb-3">
-                        سخان فورتيجو
-                      </h3>
-                      <div class="row g-5">
-                        <div class="col-md-12">
-                          <div class="d-flex justify-content-center gap-2">
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <ul dir="rtl" class="text-dark">
-                            <li>تصميم فريد وعصري من أتلانتيك.</li>
-                            <li>جيل جديد من جودة الماس في الإيناميلد.</li>
-                            <li>
-                              أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.
-                            </li>
-                            <li>
-                              عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية
-                              وتوفير الكهرباء.
-                            </li>
-                            <li>متوفر بسعة 50 لتر.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        إغلق
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- #endregion -->
-            </div>
-
-            <div class="col-md-6 order-sm-first order-md-last">
-              <div>
-                <img
-                  class="w-100"
-                  src="assests/images/productImage.png"
-                  alt="product name"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product bg-light py-5" dir="rtl">
-        <div class="container py-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 order-sm-last order-md-first" dir="rtl">
-              <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
-              <ul class="py-3 px-3">
-                <li
-                  class="text-secondary list-group-item-secondary mb-3"
-                  style="list-style: none"
-                >
-                  الموديل
-                </li>
-                <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
-                <li class="py-2">تصميم اتلانتيك الفريد</li>
-                <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
-                <li class="py-2">
-                  عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة
-                </li>
-              </ul>
-              <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
-
-              <!-- #region button and modal -->
-
-              <!-- Button trigger modal -->
-              <button
-                dir="rtl"
-                type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#fifthproductmodal"
-              >
-                المزيد
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="fifthproductmodal"
-                tabindex="-1"
-                aria-labelledby="fifthproductmodalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content bg-transparent">
-                    <div class="modal-body bg-white">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                      <h3 class="modal-title text-center fw-bolder mb-3">
-                        سخان فورتيجو
-                      </h3>
-                      <div class="row g-5">
-                        <div class="col-md-12">
-                          <div class="d-flex justify-content-center gap-2">
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                            <img
-                              class="w-50"
-                              src="assests/images/productImage.png"
-                              alt="product name"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <ul dir="rtl" class="text-dark">
-                            <li>تصميم فريد وعصري من أتلانتيك.</li>
-                            <li>جيل جديد من جودة الماس في الإيناميلد.</li>
-                            <li>
-                              أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.
-                            </li>
-                            <li>
-                              عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية
-                              وتوفير الكهرباء.
-                            </li>
-                            <li>متوفر بسعة 50 لتر.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        إغلق
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- #endregion -->
-            </div>
-
-            <div class="col-md-6 order-sm-first order-md-last">
-              <div>
+            <div class="col-md-5">
+              <div class="image-scale">
                 <img
                   class="w-100"
                   src="assests/images/productImage.png"

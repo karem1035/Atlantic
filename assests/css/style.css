@@ -81,6 +81,8 @@ nav ul a {
 	font-size: 16px !important;
 }
 
+
+
 /* HERO */
 
 header {
@@ -116,6 +118,27 @@ header {
 	position: relative;
 }
 
+
+/* PRODUCTS */
+
+.image-scale {
+	overflow: hidden !important;
+}
+
+
+
+.image-scale img {
+	transition: 1s;
+}
+
+.image-scale:hover img {
+	scale: 1.2;
+}
+
+
+.product-bg {
+	background: #e2e2e2 !important;
+}
 
 /* FORM */
 
