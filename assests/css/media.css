@@ -3,6 +3,9 @@
 		display: none !important;
 	}
 
+	nav {
+		margin-bottom: 2rem;
+	}
 
 	nav ul {
 		direction: rtl;
