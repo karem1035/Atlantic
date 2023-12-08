@@ -97,7 +97,12 @@
 		width: 100% !important;
 	}
 
-
+	.modal ul {
+		margin: 0 !important;
+		font-size: 1rem;
+		padding: 0 !important;
+		padding-right: 10px !important;
+	}
 
 	.product .container {
 		width: 95%;
@@ -105,7 +110,26 @@
 
 
 
+	header {
+		margin-bottom: 5rem;
+	}
+
 	button i {
 		display: none !important;
 	}
+
+	.button-effet div {
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.carousel-indicators {
+		display: none !important;
+	}
+
+	.product-content {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
 }
