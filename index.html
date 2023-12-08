@@ -22,7 +22,7 @@
     <!-- NAV BAR -->
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg bg-body sticky-top shadow-sm"
+      class="navbar navbar-expand-lg bg-body sticky-top shadow-sm align-items-center container-fluid"
     >
       <div class="container">
         <a class="navbar-brand col-3" href="#hero">
@@ -63,11 +63,8 @@
     <header class="container hero position-relative" id="hero">
       <div class="hero-img position-relative">
         <img class="w-100" src="assests/images/hero.jpg" alt="..." />
-        <div
-          class="position-absolute bg-black bg-opacity-50 start-0 end-0 top-0 bottom-0"
-        ></div>
       </div>
-      <div class="hero-content" dir="rtl">
+      <div class="hero-content " dir="rtl">
         <h1>عن أتلانتيك</h1>
         <p>
           شركة فرنسية عالمية ذات خبرة تمتد لأكثر من 50 عام، ومتخصصة في تقديم
@@ -155,16 +152,17 @@
     <!-- PRODUCTS -->
 
     <section class="fs-5">
-      <h2 class="text-center display-3 fw-bolder mt-5 pt-5">منتجات أتلانتيك</h2>
+      <p class="text-center fw-bolder fs-1 mt-5 pt-5">منتجات أتلانتيك</p>
       <!-- PRODUCT 1 -->
       <div
-        class="product bg-light py-5 border-bottom border-secondary-subtle"
+        class="product py-5 border-bottom border-danger"
         dir="rtl"
+        id="products"
       >
         <div class="container py-5">
           <div class="row g-5 align-items-center justify-content-center">
             <div class="col-md-5 order-sm-last order-md-first">
-              <h2 class="fw-bold py-1" dir="rtl">سخان فورتيجو</h2>
+              <h2 class="fw-bold py-1" dir="rtl">سخان Vertigo</h2>
               <ul class="py-3 px-3">
                 <li
                   class="text-secondary list-group-item-secondary mb-3"
@@ -188,13 +186,15 @@
 
               <!-- Button trigger modal -->
               <button
-                dir="rtl"
                 type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
+                class="button-effect"
                 data-bs-target="#firstproductmodal"
               >
-                المزيد
+                <div>
+                  المزيد
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
               </button>
 
               <!-- Modal -->
@@ -260,7 +260,7 @@
                       </div>
                       <button
                         type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-dark rounded-0"
+                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-danger rounded-0"
                         data-bs-dismiss="modal"
                       >
                         إغلق
@@ -276,7 +276,7 @@
               <div class="image-scale">
                 <img
                   class="w-100"
-                  src="assests/images/productImage.png"
+                  src="assests/images/vertigo.jpg"
                   alt="product name"
                 />
               </div>
@@ -285,7 +285,7 @@
         </div>
       </div>
       <!-- PRODUCT 2 -->
-      <div class="product py-5 border-bottom border-secondary-subtle" dir="ltr">
+      <div class="product py-5 border-bottom border-danger" dir="ltr">
         <div class="container py-5">
           <div class="row g-5 align-items-center justify-content-center">
             <div class="col-md-5 m-md-5 order-sm-last order-md-first" dir="rtl">
@@ -314,13 +314,13 @@
 
               <!-- Button trigger modal -->
               <button
-                dir="rtl"
                 type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
+                class="button-effect"
                 data-bs-target="#secondproductmodal"
               >
                 المزيد
+                <i class="fa-solid fa-chevron-left"></i>
               </button>
 
               <!-- Modal -->
@@ -376,7 +376,7 @@
                       </div>
                       <button
                         type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-dark rounded-0"
+                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-danger rounded-0"
                         data-bs-dismiss="modal"
                       >
                         إغلق
@@ -401,10 +401,7 @@
         </div>
       </div>
       <!-- PRODUCT 3 -->
-      <div
-        class="product bg-light py-5 border-bottom border-secondary-subtle"
-        dir="rtl"
-      >
+      <div class="product py-5 border-bottom border-danger" dir="rtl">
         <div class="container py-5">
           <div class="row g-5 align-items-center justify-content-center">
             <div class="col-md-5 order-sm-last order-md-first">
@@ -431,13 +428,13 @@
 
               <!-- Button trigger modal -->
               <button
-                dir="rtl"
                 type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
+                class="button-effect"
                 data-bs-target="#thirdproductmodal"
               >
                 المزيد
+                <i class="fa-solid fa-chevron-left"></i>
               </button>
 
               <!-- Modal -->
@@ -496,7 +493,7 @@
                       </div>
                       <button
                         type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-dark rounded-0"
+                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-danger rounded-0"
                         data-bs-dismiss="modal"
                       >
                         إغلق
@@ -521,7 +518,7 @@
         </div>
       </div>
       <!-- PRODUCT 4 -->
-      <div class="product py-5 border-bottom border-secondary-subtle" dir="ltr">
+      <div class="product py-5 border-bottom border-danger" dir="ltr">
         <div class="container py-5">
           <div class="row g-5 align-items-center justify-content-center">
             <div class="col-md-5 m-md-5 order-sm-last order-md-first" dir="rtl">
@@ -547,13 +544,13 @@
 
               <!-- Button trigger modal -->
               <button
-                dir="rtl"
                 type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
+                class="button-effect"
                 data-bs-target="#fourthproductmodal"
               >
                 المزيد
+                <i class="fa-solid fa-chevron-left"></i>
               </button>
 
               <!-- Modal -->
@@ -612,7 +609,7 @@
                       </div>
                       <button
                         type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-dark rounded-0"
+                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-danger rounded-0"
                         data-bs-dismiss="modal"
                       >
                         إغلق
@@ -637,11 +634,11 @@
         </div>
       </div>
       <!-- PRODUCT 5 -->
-      <div class="product bg-light py-5" dir="rtl">
+      <div class="product py-5" dir="rtl">
         <div class="container py-5">
           <div class="row g-5 align-items-center justify-content-center">
             <div class="col-md-5 order-sm-last order-md-first">
-              <h2 class="fw-bold py-1" dir="rtl">سخان كونسبت</h2>
+              <h2 class="fw-bold py-1" dir="rtl">سخان Consept</h2>
               <ul class="py-3 px-3">
                 <li
                   class="text-secondary list-group-item-secondary mb-3"
@@ -649,26 +646,28 @@
                 >
                   الموديل
                 </li>
-                <li class="py-2">جيل جديد من جودة الألماس فى الايناميلد</li>
-                <li class="py-2">تصميم اتلانتيك الفريد</li>
-                <li class="py-2">الخبرة والتقنية الخاصة من أتلانتيك لراحتك</li>
                 <li class="py-2">
-                  عزل فوم عالى الكثافة لتوفير قدر اكبر من الطاقة
+                  تانك داخلي من الكريستال ومصنوع من الزيكون المقاوم للصدأ لعمر
+                  افتراضي أطول.
+                </li>
+                <li class="py-2">تصميم عصري وأنيق يناسب الأذواق الرفيعة.</li>
+                <li class="py-2">
+                  ثرموستات أوروبي عالي الحساسية والجودة لعمر افترضي أطول.
                 </li>
               </ul>
-              <p class="py-3" dir="rtl">متوفر بسعات لترية 30 لتر و50لتر</p>
+              <p class="py-3" dir="rtl">متوفر بسعتي(30-50) لتر.</p>
 
               <!-- #region button and modal -->
 
               <!-- Button trigger modal -->
               <button
-                dir="rtl"
                 type="button"
-                class="btn btn-dark rounded-0 px-5 py-2 mt-3"
                 data-bs-toggle="modal"
                 data-bs-target="#fifthproductmodal"
+                class="button-effect"
               >
                 المزيد
+                <i class="fa-solid fa-chevron-left"></i>
               </button>
 
               <!-- Modal -->
@@ -689,7 +688,7 @@
                         aria-label="Close"
                       ></button>
                       <h3 class="modal-title text-center fw-bolder mb-5">
-                        سخان كونسبت
+                        سخان Consept
                       </h3>
                       <div class="row g-5 justify-content-center">
                         <div class="col-md-9">
@@ -709,22 +708,25 @@
 
                         <div class="col-md-9">
                           <ul dir="rtl" class="text-dark">
-                            <li>تصميم فريد وعصري من أتلانتيك.</li>
-                            <li>جيل جديد من جودة الماس في الإيناميلد.</li>
                             <li>
-                              أحدث التقنيات التكنولوجية لتجربة أكثر سهولة وراحة.
+                              أنبوب إخراج من الفولاذ المقاوم للصدأ لضمان أطول
+                              عمر افتراضي.
                             </li>
+                            <li>مشتت حديث محسن لتوزيع الهواء داخليًا.</li>
                             <li>
-                              عزل فوم عالي الكثافة لعدم هدر الطاقة الحرارية
-                              وتوفير الكهرباء.
+                              عامود ماغنسيوم ذو جودة عالية مقاوم للصدأ والتآكل.
                             </li>
-                            <li>متوفر بسعة 50 لتر.</li>
+                            <li>إيناميلد عالي الجودة والكفاءة (جودة الماس).</li>
+                            <li>
+                              عزل داخلي من الفوم عالي الجودة خالي من الفقاعات
+                              لتقليل الانبعاثات الحرارية وتوفير الطاقة.
+                            </li>
                           </ul>
                         </div>
                       </div>
                       <button
                         type="button"
-                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-dark rounded-0"
+                        class="btn btn-lg px-5 py-2 me-3 mt-3 btn-danger rounded-0"
                         data-bs-dismiss="modal"
                       >
                         إغلق
@@ -740,7 +742,7 @@
               <div class="image-scale">
                 <img
                   class="w-100"
-                  src="assests/images/كونسبت.jpg"
+                  src="assests/images/concept.jpg"
                   alt="product name"
                 />
               </div>
@@ -752,9 +754,9 @@
 
     <!-- Form -->
     <div class="form mt-5 mx-auto" dir="rtl" id="contact">
-      <form class="container my-5 col-lg-6">
+      <form class="container my-5 col-lg-6 fs-4">
         <label for="">
-          <p class="h2 fs-2 mb-4">تواصل معنا</p>
+          <p class="h2 fs-2 fw-bold mb-4">تواصل معنا</p>
         </label>
         <div class="d-grid">
           <div class="row">
@@ -791,8 +793,8 @@
           ></textarea>
         </div>
 
-        <div class="form-group">
-          <button type="submit" class="btn col-3 btn-primary fs-4">
+        <div class="form-group d-grid">
+          <button type="submit" class="btn btn-lg btn-primary col-xl-3">
             أرسل لنا
           </button>
         </div>
@@ -801,24 +803,51 @@
 
     <footer class="py-5">
       <div class="container d-grid">
-        <div class="row justify-content-between mb-4">
+        <div
+          class="row justify-content-between align-items-center pb-5 mb-5 border-bottom"
+        >
           <img
             src="assests/images/white logo.svg "
-            class="col-6 logo align-self-start"
+            class="logo col-6 col-md-2 mx-auto"
             alt=""
           />
-          <img src="assests/images/hotline.png" class="col-2" alt="" />
+          <img
+            src="assests/images/hotline.png"
+            class="col-2 col-md-2 mx-auto hotline"
+            alt=""
+          />
         </div>
         <div class="row justify-content-between mx-5" dir="rtl">
           <div class="col-2" dir="rtl">
             <p class="fs-5 fw-bold">الموقع حسب البلد</p>
             <ul class="countries">
-              <li class="pb-2"><a href="#">عالمي</a></li>
-              <li class="pb-2"><a href="#">بلجيكا</a></li>
-              <li class="pb-2"><a href="#">إيطاليا</a></li>
-              <li class="pb-2"><a href="#">فرنسا</a></li>
-              <li class="pb-2"><a href="#">بولندا</a></li>
-              <li class="pb-2"><a href="#">أوكرانيا</a></li>
+              <li class="pb-2">
+                <a href="https://atlantic-comfort.com/" target="_blank"
+                  >عالمي</a
+                >
+              </li>
+              <li class="pb-2">
+                <a href="https://atlantic-comfort.ae/" target="_blank">دبي </a>
+              </li>
+              <li class="pb-2">
+                <a href="https://www.atlantic.be/belgie" target="_blank"
+                  >بلجيكا</a
+                >
+              </li>
+              <li class="pb-2">
+                <a href="https://atlantic-comfort.it/" target="_blank"
+                  >إيطاليا</a
+                >
+              </li>
+              <li class="pb-2">
+                <a href="https://www.atlantic.fr/" target="_blank">فرنسا</a>
+              </li>
+              <li class="pb-2">
+                <a href="https://groupe-atlantic.pl/" target="_blank">بولندا</a>
+              </li>
+              <li class="pb-2">
+                <a href="https://atlantic.ua/" target="_blank">أوكرانيا</a>
+              </li>
             </ul>
           </div>
           <div class="col-2" dir="rtl">

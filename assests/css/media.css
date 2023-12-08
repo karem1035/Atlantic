@@ -11,6 +11,49 @@
 		gap: 1rem;
 	}
 
+	.navbar-toggler-icon {
+		scale: 80%;
+	}
+
+	.navbar-toggler:focus {
+		border: none !important;
+	}
+
+	.product {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.product img {
+		padding: 0 !important;
+	}
+
+	.prodict .container {
+		padding: 0;
+	}
+
+	.hotline {
+		margin-top: 2rem !important;
+	}
+
+	ul {
+		padding: 0 !important;
+	}
+}
+
+@media screen and (max-width: 750) {
+	body {
+		background-color: red !important;
+
+	}
+
+	body {
+		width: 100%;
+		margin: 0 !important;
+		overflow-x: hidden !important;
+
+	}
 
 
+	
 }
