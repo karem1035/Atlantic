@@ -42,6 +42,10 @@ a {
 }
 
 
+.bold {
+	font-family: 'GE-SS-Two-Bold'
+}
+
 
 
 
@@ -71,6 +75,9 @@ a {
 }
 
 /* NAV BAR */
+nav {
+	margin-bottom: 4rem;
+}
 
 nav button {
 	scale: 150%;
@@ -180,6 +187,10 @@ header {
 	scale: 1.1;
 }
 
+.modal ul li {
+	padding: 10px !important;
+}
+
 /* FORM */
 
 form .btn {
@@ -227,16 +238,35 @@ footer .container {
 	padding: 1rem 0rem;
 }
 
-footer .countries {
-	columns: 2;
+.footer-text {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 footer ul {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
 	padding: 0;
 	list-style: none;
-	columns: 2;
-
 }
+
+footer ul li {
+	transition: 0.5s;
+	color: #fff !important;
+}
+
+footer ul li:hover {
+	scale: 1.1;
+}
+
+.footer-logos {
+	display: flex;
+	justify-content: space-between !important;
+	align-items: center;
+}
+
 
 footer ul a {
 	color: #fff;

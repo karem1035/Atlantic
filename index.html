@@ -13,7 +13,9 @@
 
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- TOP BAR -->
-    <div class="top-bar d-flex justify-content-center align-c m-1">
+    <div
+      class="top-bar bg-body-tertiary py-1 d-flex justify-content-center align-c"
+    >
       <img src="assests/images/france-icon.png" class="me-4" alt="" />
       <a href="#" class="fs-4 text">
         <span class="me-2">1986</span>علامة فرنسية منذ عام</a
@@ -22,7 +24,7 @@
     <!-- NAV BAR -->
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg bg-body sticky-top shadow-sm align-items-center container-fluid"
+      class="navbar bg-body-tertiary navbar-expand-lg bg-body sticky-top shadow-sm align-items-center container-fluid"
     >
       <div class="container">
         <a class="navbar-brand col-3" href="#hero">
@@ -30,7 +32,7 @@
             id="logo"
             src="assests/images/red logo.svg"
             alt="atlantic logo"
-            width="80%"
+            width="100%"
           />
         </a>
         <button
@@ -64,7 +66,7 @@
       <div class="hero-img position-relative">
         <img class="w-100" src="assests/images/hero.jpg" alt="..." />
       </div>
-      <div class="hero-content " dir="rtl">
+      <div class="hero-content" dir="rtl">
         <h1>عن أتلانتيك</h1>
         <p>
           شركة فرنسية عالمية ذات خبرة تمتد لأكثر من 50 عام، ومتخصصة في تقديم
@@ -152,15 +154,19 @@
     <!-- PRODUCTS -->
 
     <section class="fs-5">
-      <p class="text-center fw-bolder fs-1 mt-5 pt-5">منتجات أتلانتيك</p>
+      <p class="text-center fw-bolder fs-1 mt-5 pt-5" id="products">
+        منتجات أتلانتيك
+      </p>
       <!-- PRODUCT 1 -->
       <div
-        class="product py-5 border-bottom border-danger"
+        class="product py-m-5 pt-5 border-bottom border-danger"
         dir="rtl"
-        id="products"
+        id="vertigo"
       >
         <div class="container py-5">
-          <div class="row g-5 align-items-center justify-content-center">
+          <div
+            class="row g-5 align-items-center justify-content-center mx-auto product-item"
+          >
             <div class="col-md-5 order-sm-last order-md-first">
               <h2 class="fw-bold py-1" dir="rtl">سخان Vertigo</h2>
               <ul class="py-3 px-3">
@@ -285,11 +291,13 @@
         </div>
       </div>
       <!-- PRODUCT 2 -->
-      <div class="product py-5 border-bottom border-danger" dir="ltr">
+      <div class="product py-5 border-bottom border-danger" id="opro-turbo">
         <div class="container py-5">
-          <div class="row g-5 align-items-center justify-content-center">
+          <div
+            class="row g-5 align-items-center justify-content-center product-item mx-auto"
+          >
             <div class="col-md-5 m-md-5 order-sm-last order-md-first" dir="rtl">
-              <h2 class="fw-bold py-1" dir="rtl">سخان O’Pro Turbo</h2>
+              <h2 class="fw-bold py-1">سخان O’Pro Turbo</h2>
 
               <ul class="py-3 px-3">
                 <li
@@ -308,7 +316,7 @@
                   المطلوب لتوفير أكبر قدر من الطاقة.
                 </li>
               </ul>
-              <p class="py-3" dir="rtl">متوفر بسعة 50 لتر.</p>
+              <p class="py-3">متوفر بسعة 50 لتر.</p>
 
               <!-- #region button and modal -->
 
@@ -401,9 +409,11 @@
         </div>
       </div>
       <!-- PRODUCT 3 -->
-      <div class="product py-5 border-bottom border-danger" dir="rtl">
+      <div class="product py-5 border-bottom border-danger" dir="rtl" id="opro">
         <div class="container py-5">
-          <div class="row g-5 align-items-center justify-content-center">
+          <div
+            class="row g-5 align-items-center justify-content-center product-item mx-auto"
+          >
             <div class="col-md-5 order-sm-last order-md-first">
               <h2 class="fw-bold py-1" dir="rtl">سخان O’Pro</h2>
               <ul class="py-3 px-3">
@@ -518,9 +528,11 @@
         </div>
       </div>
       <!-- PRODUCT 4 -->
-      <div class="product py-5 border-bottom border-danger" dir="ltr">
+      <div class="product py-5 border-bottom border-danger" dir="ltr" id="ego">
         <div class="container py-5">
-          <div class="row g-5 align-items-center justify-content-center">
+          <div
+            class="row g-5 align-items-center justify-content-center product-item mx-auto"
+          >
             <div class="col-md-5 m-md-5 order-sm-last order-md-first" dir="rtl">
               <h2 class="fw-bold py-1" dir="rtl">سخان Ego</h2>
               <ul class="py-3 px-3">
@@ -636,7 +648,10 @@
       <!-- PRODUCT 5 -->
       <div class="product py-5" dir="rtl">
         <div class="container py-5">
-          <div class="row g-5 align-items-center justify-content-center">
+          <div
+            class="row g-5 align-items-center justify-content-center product-item mx-auto"
+            id="consept"
+          >
             <div class="col-md-5 order-sm-last order-md-first">
               <h2 class="fw-bold py-1" dir="rtl">سخان Consept</h2>
               <ul class="py-3 px-3">
@@ -802,23 +817,21 @@
     </div>
 
     <footer class="py-5">
-      <div class="container d-grid">
-        <div
-          class="row justify-content-between align-items-center pb-5 mb-5 border-bottom"
-        >
+      <div class="container">
+        <div class="footer-logos pb-5 mb-5 border-bottom">
           <img
             src="assests/images/white logo.svg "
-            class="logo col-6 col-md-2 mx-auto"
+            class="logo col-md-2"
             alt=""
           />
           <img
             src="assests/images/hotline.png"
-            class="col-2 col-md-2 mx-auto hotline"
+            class="logo col-2 col-md-2"
             alt=""
           />
         </div>
-        <div class="row justify-content-between mx-5" dir="rtl">
-          <div class="col-2" dir="rtl">
+        <div class="mx-5 footer-text" dir="rtl">
+          <div class="col-lg-2" dir="rtl">
             <p class="fs-5 fw-bold">الموقع حسب البلد</p>
             <ul class="countries">
               <li class="pb-2">
@@ -850,17 +863,17 @@
               </li>
             </ul>
           </div>
-          <div class="col-2" dir="rtl">
+          <div class="col-lg-2" dir="rtl">
             <p class="fs-5 fw-bold">المنتجات</p>
             <ul>
-              <li class="pb-2"><a href="#">فيرتيجو</a></li>
-              <li class="pb-2"><a href="#">اوبرو تيربو </a></li>
-              <li class="pb-2"><a href="#">اوبرو</a></li>
-              <li class="pb-2"><a href="#">ايجو</a></li>
-              <li class="pb-2"><a href="#">كونسبت</a></li>
+              <li class="pb-2"><a href="#vertigo">Vertigo</a></li>
+              <li class="pb-2"><a href="#opro-turbo">O’Pro Turbo</a></li>
+              <li class="pb-2"><a href="#opro">O'pro</a></li>
+              <li class="pb-2"><a href="#ego">Ego</a></li>
+              <li class="pb-2"><a href="#consept">Consept</a></li>
             </ul>
           </div>
-          <div class="col-2" dir="rtl">
+          <div class="col-lg-2" dir="rtl">
             <p class="fs-5 fw-bold">تواصل معنا</p>
             <ul class="social">
               <li class="pb-2">
