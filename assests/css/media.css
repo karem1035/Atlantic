@@ -1,4 +1,4 @@
-@media screen and (max-width: 973px) {
+@media screen and (max-width: 1050px) {
 	.top-bar {
 		display: none !important;
 	}
@@ -38,6 +38,12 @@
 
 	.hotline {
 		margin-top: 2rem !important;
+	}
+
+	.product-item {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100% !important;
 	}
 
 
@@ -136,4 +142,8 @@
 		padding: 0 !important;
 	}
 
+
+	.hero-content {
+	font-size: 1rem;
+	}
 }
