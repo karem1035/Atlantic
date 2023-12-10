@@ -1,6 +1,20 @@
 @media screen and (max-width: 1050px) {
 	.top-bar {
-		display: none !important;
+		align-items: center;
+		gap: 0.1rem !important;
+		transition: 0.5s;
+	}
+
+	.top-bar a {
+		color: var(--dark);
+		border-bottom: none;
+		font-size: 0.8rem !important;
+		cursor: default;
+	}
+
+	.top-bar img {
+		width: 15px;
+		height: 15px;
 	}
 
 	nav {
@@ -144,6 +158,6 @@
 
 
 	.hero-content {
-	font-size: 1rem;
+		font-size: 1rem;
 	}
 }
